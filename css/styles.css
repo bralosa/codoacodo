@@ -1,0 +1,159 @@
+html{
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+    background-color: gray;
+}
+
+body{
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (min-width: 901px){
+  header nav  {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-auto-rows: auto;
+      align-items: center;
+      text-align: center;
+      gap: 0.5rem;
+      border: 1rem groove white;
+      font-size: 1.5rem;
+      border-radius: 0.5rem;
+    }
+  }
+  
+
+  @keyframes changecolor {
+    from {background-color: rgb(21, 255, 0);}
+    to {background-color: rgb(255, 0, 0);}
+  }
+  .parte1 {
+    grid-column: 1;
+  }
+  
+  .parte2 {
+    grid-column: 2;
+  }
+
+  .titulo h1{
+      grid-column: 3;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 2rem;
+      text-transform: uppercase;
+      border: 0.5rem groove yellowgreen;
+      border-radius: 5px;
+      
+    
+
+  }
+    
+  .parte3 {
+    grid-column: 4;
+  }
+  
+  .parte4 {
+    grid-column: 5;
+  }
+  
+  .linksPAG {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    color: black;
+  }
+  
+  .linksPAG:hover {
+    color: white;
+    border: 1rem groove black;
+    background-color: coral;
+    padding: 0.5rem;
+    transition-property: all;
+    transition-timing-function: ease-in ;
+    animation: changecolor;
+    animation-iteration-count: infinite;
+    
+  }
+
+  .flex-container{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction:row wrap;
+    align-items: center;
+    
+}
+
+img {
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  
+
+}
+
+
+  @media screen and (min-width: 901px){
+    .footer  {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        align-items: center;
+        text-align: center;
+        gap: 0.5rem;
+        border: 3px groove white;
+        font-size: 1.5rem;
+        border-radius: 0.5rem;
+      }
+    }
+    
+
+
+
+
+
+.icono1{
+grid-column: 1;
+}
+
+
+.icono2{
+  grid-column: 2; 
+}
+
+
+
+@media screen and (max-width: 900px) {
+  header nav  {
+      flex-direction: column;
+      border: 0.5rem groove white;
+      border-radius: 1rem;
+     }
+
+     .linksPAG:hover {
+      color: white;
+      border: 0.4rem roove black;
+      background-color: coral;
+      padding: 0.5rem;
+      transition-property: all;
+      transition-timing-function: ease-in ;
+      animation: changecolor;
+      animation-iteration-count: infinite;
+
+    }
+  }
+
+
+
